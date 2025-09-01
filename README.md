@@ -2,13 +2,14 @@
 
 A clean, beginner-friendly notebook for training and evaluating a CNN-based classifier on an Arabic Sign Language (ASL) image dataset.
 
-## Features
-- Single Jupyter notebook workflow (`ASL_Classification.ipynb`)
-- CNN baseline you can swap/extend
-- Clear metrics & confusion matrix
-- Simple repo layout for students and workshops
-
 ## Repo Structure
+```
+ASL-Classification/
+├─ ASL_Classification.ipynb
+├─ requirements.txt
+├─ README.md
+└─ dataset
+```
 
 ## Setup
 
@@ -41,8 +42,6 @@ data/
 The notebook reports:
 
 - Accuracy, loss curves
-- Classification report
-- Confusion matrix
 
 ### Tips
 
@@ -61,16 +60,9 @@ The model was trained on the Arabic Sign Language dataset with the following con
 ### Accuracy & Loss
 | Metric        | Train | Validation |
 |---------------|-------|------------|
-| Accuracy      | 98.7% | 98.8%      |
-| Loss          | 0.05  | 0.04       |
+| Accuracy      | 96.7% | 98.8%      |
+| Loss          | 0.12  | 0.04       |
 
 ### Learning Curves
 ![Accuracy and Loss Curves](assets/accuracy_curve.png)
 
-### Confusion Matrix
-![Confusion Matrix](assets/confusion_matrix.png)
-
-### Observations
-- The model generalizes well with only minor overfitting after ~15 epochs.
-- Class `X` was confused with `Y` most often — future work could explore data augmentation.
-- GPU runtime: ~15 minutes on Google Colab (T4).
