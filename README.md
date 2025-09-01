@@ -1,4 +1,4 @@
-# ASL Classification (Arabic Sign Language) 👋
+# ASL Classification (Arabic Sign Language) 
 
 A clean, beginner-friendly notebook for training and evaluating a CNN-based classifier on an Arabic Sign Language (ASL) image dataset.
 
@@ -23,11 +23,13 @@ If using Drive, mount Drive and set dataset paths accordingly.
 - Point the notebook to your dataset path.
 
 - Common structure (customize as needed):
+```
 data/
 ├─ train/
 │  ├─ A/  ├─ B/  ├─ C/  ...
 └─ val/
    ├─ A/  ├─ B/  ├─ C/  ...
+```
 
 ### How to Run
 
@@ -50,21 +52,20 @@ The notebook reports:
 ## Results
 
 The model was trained on the Arabic Sign Language dataset with the following configuration:
-- Image size: 64x64 (adjust if different)
-- Batch size: 32
-- Epochs: 20
+- Image size: 64x64
+- Batch size: 128
+- Epochs: 17
 - Optimizer: Adam
 - Loss: Categorical Crossentropy
 
 ### Accuracy & Loss
 | Metric        | Train | Validation |
 |---------------|-------|------------|
-| Accuracy      | 95%   | 92%        |
-| Loss          | 0.18  | 0.25       |
+| Accuracy      | 98.7% | 98.8%      |
+| Loss          | 0.05  | 0.04       |
 
 ### Learning Curves
-![Accuracy Curve](assets/accuracy_curve.png)
-![Loss Curve](assets/loss_curve.png)
+![Accuracy and Loss Curves](assets/accuracy_curve.png)
 
 ### Confusion Matrix
 ![Confusion Matrix](assets/confusion_matrix.png)
