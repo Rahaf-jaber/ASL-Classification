@@ -7,8 +7,8 @@ A clean, beginner-friendly notebook for training and evaluating a CNN-based clas
 ASL-Classification/
 ├─ ASL_Classification.ipynb
 ├─ requirements.txt
-├─ README.md
-└─ dataset
+└─ README.md
+ 
 ```
 
 ## Setup
