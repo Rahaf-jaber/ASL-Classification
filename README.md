@@ -64,5 +64,5 @@ The model was trained on the Arabic Sign Language dataset with the following con
 | Loss          | 0.12  | 0.04       |
 
 ### Learning Curves
-![Accuracy and Loss Curves](assets/accuracy_curve.png)
+![Accuracy and Loss Curves](plots.png)
 
